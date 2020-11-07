@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DATE=$(date +"%Y-%m-%d_%H_%M_%S")
+
+sudo fswebcam -r 1280x720 --no-banner /home/pi/Internship/"opencv FR"/datastore/me/$DATE.jpg
+
