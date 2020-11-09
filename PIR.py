@@ -18,10 +18,10 @@ GPIO.setup(pir_pin, GPIO.IN)
 def send_sms_msg():
     message = 'Intruder Alert in '+str(datetime.now())
     
-    client = nexmo.Client(key='610e4f39', secret='3c61pWVRIRNGX52j')
+    client = nexmo.Client(key='***', secret='***')
     client.send_message({
         'from': 'Vonage APIs',
-        'to': '971557546784',
+        'to': '9715xxxxxxx',
         'text': message,
     })
 
